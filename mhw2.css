@@ -1,0 +1,179 @@
+#menu a{
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+    margin: 5px;
+}
+#menu a:hover {
+    text-decoration:underline;
+    color:grey;
+    font-size:30px;
+}
+#titolo {
+    color:white;
+    font-size: 55px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+header{
+    background-image: url(images/concessionaria.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size:20px;
+    padding:20px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#up{
+    position: fixed;
+    top: 95%;
+    left: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+}
+
+#up img{
+    height: 30px;
+    width: 30px;
+    margin-left: 95%;
+}
+
+article {
+    margin: auto;
+    width: 900px;
+}
+header{
+    background-image: url(images/concessionaria.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+header img{
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    margin-top: auto;
+}
+header h1{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245,0.70);
+    color:black;
+    font-size: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    z-index: 1;
+    font-family: 'Libre Baskerville', serif;
+    color: #252850;
+}
+article h1{
+    font-family: 'Libre Baskerville', serif;
+    color: #252850;
+}
+.griglia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.griglia h1{
+    display: inline;
+    font-size: 15px;
+}
+.griglia div{
+    margin-top: 50px;
+    border: 1px solid black;
+    width: 200px;
+    background-color: rgba(223, 219, 219, 0.24);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+span{
+    display: block;
+    border: 3px solid #252850;
+    border-radius: 15px;
+    background-color:#2528505b;
+    padding: 1px;
+}
+span a{
+    font-weight: bold;
+}
+.hidden{
+    display: none;
+}
+p.dett{
+    font-size: 15px;
+}
+.griglia p{
+    text-align: center;
+}
+#titolo-box p{
+    font-family: 'Playfair Display', serif;
+}
+.griglia img.preferito{
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.tasto:hover,img.preferito:hover{
+    cursor: pointer;
+}
+.griglia div img{
+    width: 100%;
+    margin-bottom: 0;
+}
+.ricerca{
+    display: flex;
+    justify-content: flex-end;
+}
+.ricerca img{
+    margin-left: 5px;
+    height: 4%;
+    width: 4%;
+}
+footer{
+    background-color:rgba(128, 128, 128, 0.45);
+    color:#252850;
+    text-align: center;
+    padding:70px;
+    margin-top: 150px;
+}
+footer p{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.titolo-box{
+    display: flex;
+    justify-content: space-between;
+}

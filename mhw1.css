@@ -1,0 +1,270 @@
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+    margin: 5px;
+}
+#menu a:hover {
+    text-decoration:underline;
+    color:grey;
+    font-size:30px;
+}
+#titolo {
+    color:white;
+    font-size: 55px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+header{
+    background-image: url(images/concessionaria.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+header h1{
+    font-weight: normal;
+    text-align: center;
+    z-index: 1;
+    margin-top:auto;
+    color:white;
+    border-radius: 5px; 
+    font-size: 50px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size:20px;
+    padding:20px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#up{
+    position: fixed;
+    top: 95%;
+    left: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+}
+#up img{
+    height: 30px;
+    width: 30px;
+    margin-left: 95%;
+}
+/*overlay*/
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+section {
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.button,.button1{
+    border: 1px solid white;
+    color:black;
+    font-size: 25px ;
+    border-radius: 10px;
+    padding: 0px 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.button{
+    background-color:rgba(230, 230, 230, 0.5);
+}
+.button1{
+    background-color:rgba(51, 55, 122, 0.671);
+}
+.button:hover,.button1:hover{
+    font-size:30px;
+}
+
+footer{
+    background-color:rgba(128, 128, 128, 0.45);
+    color:#252850;
+    text-align: center;
+    padding:75px;
+}
+footer p{
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+#main h1{
+    margin-top:50px;
+    text-align: center;
+    font-size:50px;
+    font-family: 'Libre Baskerville', serif;
+    color: #252850;
+}
+#main p{
+    margin-top: -10px;
+    text-align: center;
+    font-size:30px;
+    font-family: 'Playfair Display', serif;
+    color:grey;
+}
+
+#contents{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.foto-testo{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+}
+#inverti1,#inverti2{
+    flex-direction: row-reverse;
+}
+#contents img{
+    height: auto;
+    width: auto;
+}
+.testo{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align: left;
+}
+.testo h1{
+    font-size:30px;
+    font-family: 'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, sans-serif;
+    color:#252850;
+}
+.testo p{
+    font-size: 18px;
+    font-family:'Playfair Display' , serif;
+}
+/*Implementazione per mobile*/
+#menu-mobile{
+    display:none;
+}
+#menu-mobile div{
+    width: 25px;
+    height: 3px;
+    background-color:white;
+    margin: 5px 0;
+}
+
+@media(max-width:500px){
+    #menu-mobile{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media(max-width:500px){
+    header h1 {
+        font-size: 18px;
+        letter-spacing:4px;
+    }
+}
+@media (max-width: 500px) {
+    header {
+        height: 200px;
+        line-height: 1.2;
+    }
+}
+@media(max-width:500px){
+    section{
+        margin:40px 10px;
+    }
+}
+@media(max-width:500px){
+    .foto-testo,#inverti1,#inverti2,#contents{
+        flex-direction:column;
+    }
+}
+@media(max-width:500px){
+    .testo p{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:500px){
+    #contents img{
+        margin-left: 0;
+        margin-right: 0;
+        width: 300px;
+        height: 300px;
+        margin-top:40px;
+    }
+}
+@media (max-width: 500px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:500px){
+    #main h1{
+        font-size:25px;
+    }
+}
+@media(max-width:500px){
+    #main p {
+        font-size: 15px;
+    };
+}
+@media (max-width: 500px) {
+    .button,.button1 {
+        font-size: 12px;
+        margin: 10px;
+        z-index: 1;
+    }
+}
+@media(max-width:500px){
+    .button:hover,.button1:hover{
+        font-size:12px;
+    }
+}
+@media (max-width: 500px) {
+    header nav {
+        padding: 5px;
+    }
+}
+@media (max-width: 500px) {
+    #titolo {
+        font-size: 25px;
+    }
+}
+@media(max-width:500px){
+    .testo {
+        height: 200px;
+        width: 300px;
+    }
+}
+@media(max-width:500px){
+    div.testo{
+        margin-top:75px;
+    }
+}
+@media(max-width:500px){
+    footer{
+        padding: 50px;
+        margin-top:100px;
+    }
+}
